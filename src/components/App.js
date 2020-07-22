@@ -5,7 +5,7 @@ import RandomRestaurant from './RandomRestaurant';
 function App() {
   return (
     <React.Fragment>
-      <RandomRestaurant/>
+      <div className='random'><RandomRestaurant /></div>
     </React.Fragment>
   )
 }

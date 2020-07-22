@@ -21,22 +21,15 @@ function RandomRestaurant() {
   return (
     <div>
       {isLoading && <h1>Your Rendezvous location is loading...</h1>}
-
-      {apiCall.name}
-      <br/>
-      {apiCall.address}
-      <br />
-      {apiCall.number}
-      <br />
-      <a href={apiCall.menu}>Menu</a>
-      <br />
-      <a href={apiCall.reservation}>Make a reservation</a>
-      <br />
-      <a href={apiCall.website}>Checkout their website</a>
-      <br />
-      {apiCall.category}
-      <br />
-      {apiCall.price}
+      <h1>Here is your rendezvous</h1>
+      <p className='restName'>{apiCall.name}</p>
+      <p className='restAdd'>{apiCall.address}</p>
+      <p className='restNum'>{apiCall.number}</p>
+      <a className='restMenu' href={apiCall.menu}>Menu</a><br />
+      <a className='restResv' href={apiCall.reservation}>Make a reservation</a><br />
+      <a className='restWeb' href={apiCall.website}>Checkout their website</a><br />
+      <p className='restCat'>{apiCall.category}</p>
+      <p className='restPrice'>{apiCall.price}</p>
     </div>
   );
   
