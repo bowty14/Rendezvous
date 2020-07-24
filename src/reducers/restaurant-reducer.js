@@ -17,6 +17,11 @@ export default (state = initialState, action) => {
         isLoading: false,
         restaurants: action.restaurants
       });
+    case c.GET_RESTAURANT_FAILURE:
+      return Object.assign({}, state, {
+        isLoading: false,
+        error: action.error
+      });
     default:
       return state
   }

@@ -9,7 +9,7 @@ describe('restaurantReducer', () => {
     restaurants: [],
     error: null
   };
-  
+
   const loadingState = {
     isLoading: false,
     restaurants: [],
@@ -30,6 +30,7 @@ describe('restaurantReducer', () => {
     action = {
       type: c.REQUEST_RESTAURANT
     };
+
     expect(restaurantReducer(defaultState, action)).toEqual({
       isLoading: true,
       restaurants: [],
@@ -51,4 +52,19 @@ describe('restaurantReducer', () => {
     });
   });
 
+  test('failing to get restaurants should change isLoading to false and add a error message', () => {
+    const error = 'An error';
+    action = {
+      type: c.GET_RESTAURANT_FAILURE,
+      error
+    };
+
+    expect(restaurantReducer(loadingState, action)).toEqual({
+      isLoading: false,
+      restaurants: [],
+      error: 'An error'
+    });
+  });
+
+  
 });
