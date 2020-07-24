@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Header() {
+function Banner() {
   const headerStyles = {
     postiion: 'absolute',
     top: '0',
@@ -10,7 +10,8 @@ function Header() {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    flexWrap: 'wrap'
+    flexWrap: 'wrap',
+    borderBottom: '3px solid rgb(91,192,222)'
   }
 
   return (<div className='header' style={headerStyles}>
@@ -19,4 +20,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Banner;
