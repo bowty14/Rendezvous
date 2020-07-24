@@ -1,6 +1,8 @@
-import restaurantReducer from '../../reducers/restaurantReducer';
+import restaurantReducer from '../../reducers/restaurant-reducer';
+import * as c from './../../actions/ActionTypes';
 
 describe('restaurantReducer', () => {
+  let action;
 
   const defaultState = {
     isLoading: false,
@@ -16,6 +18,15 @@ describe('restaurantReducer', () => {
       }
     );
   });
+  test('requesting restaurants should successfully change isLoading from false to true', () => {
+    action = {
+      type: c.REQUEST_RESTAURANT
+    };
+    expect(restaurantReducer(defaultState, action)).toEqual({
+      isLoading: true,
+      restaurants: [],
+      error: null
+    });
+  });
 
-  
 });
