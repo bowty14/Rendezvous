@@ -1,40 +1,56 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { makeApiCall } from '../actions';
+import {connect} from 'react-redux';
+
+class RestaurantList extends React.Component {
+  constructor(props) {
+    super(props);
+  }
 
 
-function RestaurantList() {
-  const [apiCall, setApiCall] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+    componentDidMount() {
+      const { dispatch } = this.props;
+      dispatch(makeApiCall());
+    }
 
-
-  useEffect(() => {
-    fetch('https://serene-earth-10579.herokuapp.com/restaurants/1', {
-      method: 'Get'
-    })
-      .then(res => res.json())
-      .then(response => {
-        setApiCall(response);
-        setIsLoading(false);
-      })
-      .catch(error => console.log(error));
-  })
-
-  return (
-    <React.Fragment>
-      <div>
-        {isLoading && <h1>Your Rendezvous location is loading...</h1>}
-        <h1>Here is your rendezvous</h1>
-        <p className='restName'>{apiCall.name}</p>
-        <p className='restAdd'>{apiCall.address}</p>
-        <p className='restNum'>{apiCall.number}</p>
-        <a className='restMenu' href={apiCall.menu}>Menu</a><br />
-        <a className='restResv' href={apiCall.reservation}>Make a reservation</a><br />
-        <a className='restWeb' href={apiCall.website}>Checkout their website</a><br />
-        <p className='restCat'>{apiCall.category}</p>
-        <p className='restPrice'>{apiCall.price}</p>
-        <button onClick={() => (useEffect)}>Try again</button>
-      </div>
-    </React.Fragment>
-  );
-  
+  render() {
+    const { error, isLoading, restaurants, dispatch} = this.props;
+    if (error) {
+      return <React.Fragment>Error: {error.message}</React.Fragment>;
+    } else if (isLoading) {
+      return <React.Fragment>Loading restaurants...</React.Fragment>;
+    } else {
+      return (
+        <React.Fragment>
+          <div>
+            {isLoading && <h1>Your Rendezvous location is loading...</h1>}
+            <h1>Here is your rendezvous</h1>
+            <p className='restName'>{restaurants.name}</p>
+            <p className='restAdd'>{restaurants.address}</p>
+            <p className='restNum'>{restaurants.number}</p>
+            <a className='restMenu' href={restaurants.menu}>Menu</a><br />
+            <a className='restResv' href={restaurants.reservation}>Make a reservation</a><br />
+            <a className='restWeb' href={restaurants.website}>Checkout their website</a><br />
+            <p className='restCat'>{restaurants.category}</p>
+            <p className='restPrice'>{restaurants.price}</p>
+            <button onClick={()=> dispatch(makeApiCall())}>New restaurant</button>
+          </div>
+        </React.Fragment>
+      );
+    }  
+  }
 }
-export default RestaurantList;
+
+const mapStateToProps = state => {
+  return {
+    restaurants: state.restaurants,
+    isLoading: state.isLoading,
+    error: state.error
+  }
+}
+export default connect(mapStateToProps)(RestaurantList);
+
+
+
+
+ 
