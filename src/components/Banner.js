@@ -15,7 +15,7 @@ function Banner() {
   }
 
   return (<div className='header' style={headerStyles}>
-    <h1>Here is your rendezvous</h1>
+    <h1>Rendezvous in PDX</h1>
   </div>
   );
 }
