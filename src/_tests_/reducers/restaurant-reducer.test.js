@@ -9,6 +9,12 @@ describe('restaurantReducer', () => {
     restaurants: [],
     error: null
   };
+  
+  const loadingState = {
+    isLoading: false,
+    restaurants: [],
+    error: null
+  };
 
   test('should successfully return the default state if no action is passed into it', () => {
     expect(restaurantReducer(defaultState, { type: null })).toEqual(
