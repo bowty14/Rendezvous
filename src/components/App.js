@@ -1,11 +1,11 @@
 import React from 'react';
 import '../App.css';
-import RandomRestaurant from './RandomRestaurant';
+import RestaurantList from './RestaurantList';
 
 function App() {
   return (
     <React.Fragment>
-      <div className='random'><RandomRestaurant /></div>
+      <div className='random'><RestaurantList /></div>
     </React.Fragment>
   )
 }
