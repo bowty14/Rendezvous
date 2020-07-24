@@ -8,5 +8,21 @@ describe('restaurant reducer actions', () => {
     });
   });
 
+  it('getRestaurantSuccess should create GET_RESTAURANT_SUCCESS action', () => {
+    const restaurants = 'A restaurant';
+    expect(actions.getRestaurantSuccess(restaurants)).toEqual({
+      type: c.GET_RESTAURANT_SUCCESS,
+      restaurants
+    });
+  });
+
+  it('getRestaurantFailure should create GET_RESTAURANT_FAILURE action', () => {
+    const error = 'An error';
+    expect(actions.getRestaurantFailure(error)).toEqual({
+      type: c.GET_RESTAURANT_FAILURE,
+      error
+    });
+  });
+
   
 });
