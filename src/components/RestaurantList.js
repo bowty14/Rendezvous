@@ -25,7 +25,7 @@ class RestaurantList extends React.Component {
         <React.Fragment>
           <div>
             {isLoading && <h1>Your Rendezvous location is loading...</h1>}
-            <h1>Here is your rendezvous</h1>
+           
             <div className='card'>
               <p className='restName'>{restaurants.name}</p>
               <p className='restAdd'>{restaurants.address}</p>
