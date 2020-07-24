@@ -13,8 +13,8 @@ class RestaurantList extends React.Component {
       const { dispatch } = this.props;
       dispatch(makeApiCall());
     }
-
-  render() {
+    
+    render() {
     const { error, isLoading, restaurants, dispatch} = this.props;
     if (error) {
       return <React.Fragment>Error: {error.message}</React.Fragment>;
@@ -25,19 +25,19 @@ class RestaurantList extends React.Component {
         <React.Fragment>
           <div>
             {isLoading && <h1>Your Rendezvous location is loading...</h1>}
+            <button className="randombtn" onClick={()=> dispatch(makeApiCall())}>New restaurant</button>
            
             <div className='card'>
-              <p className='restName'>{restaurants.name}</p>
-              <p className='restAdd'>{restaurants.address}</p>
-              <p className='restNum'>{restaurants.number}</p>
-              <p className='restCat'>Category: {restaurants.category}</p>
-              <p className='restPrice'>Price per person: {restaurants.price}</p>
+              <h1 className='restName'>{restaurants.name}</h1>
+              <h3 className='restAdd'>{restaurants.address}</h3>
+              <h3 className='restNum'>{restaurants.number}</h3>
+              <h3 className='restCat'>Category: {restaurants.category}</h3>
+              <h3 className='restPrice'>Price per person: {restaurants.price}</h3>
               <button className='menubtn'><a className='restMenu' href={restaurants.menu}>Menu</a></button><br />
               <button className='resbtn'><a className='restResv' href={restaurants.reservation}>Make a reservation</a></button><br />
               <button className='webBtn'><a className='restWeb' href={restaurants.website}>Checkout their website</a></button>
             </div>
             <br/><br/>
-            <button className="randombtn" onClick={()=> dispatch(makeApiCall())}>New restaurant</button>
           </div>
         </React.Fragment>
       );
