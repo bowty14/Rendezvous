@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeApiCall } from '../actions';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
+
 
 class RestaurantList extends React.Component {
   constructor(props) {
@@ -25,15 +26,18 @@ class RestaurantList extends React.Component {
           <div>
             {isLoading && <h1>Your Rendezvous location is loading...</h1>}
             <h1>Here is your rendezvous</h1>
-            <p className='restName'>{restaurants.name}</p>
-            <p className='restAdd'>{restaurants.address}</p>
-            <p className='restNum'>{restaurants.number}</p>
-            <a className='restMenu' href={restaurants.menu}>Menu</a><br />
-            <a className='restResv' href={restaurants.reservation}>Make a reservation</a><br />
-            <a className='restWeb' href={restaurants.website}>Checkout their website</a><br />
-            <p className='restCat'>{restaurants.category}</p>
-            <p className='restPrice'>{restaurants.price}</p>
-            <button onClick={()=> dispatch(makeApiCall())}>New restaurant</button>
+            <div className='card'>
+              <p className='restName'>{restaurants.name}</p>
+              <p className='restAdd'>{restaurants.address}</p>
+              <p className='restNum'>{restaurants.number}</p>
+              <p className='restCat'>Category: {restaurants.category}</p>
+              <p className='restPrice'>Price per person: {restaurants.price}</p>
+              <button className='menubtn'><a className='restMenu' href={restaurants.menu}>Menu</a></button><br />
+              <button className='resbtn'><a className='restResv' href={restaurants.reservation}>Make a reservation</a></button><br />
+              <button className='webBtn'><a className='restWeb' href={restaurants.website}>Checkout their website</a></button>
+            </div>
+            <br/><br/>
+            <button className="randombtn" onClick={()=> dispatch(makeApiCall())}>New restaurant</button>
           </div>
         </React.Fragment>
       );
