@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { createStore, applyMiddleware } from 'redux';
+import reducer from './reducers';
+import middlewareExample from './middleware/middleware-example';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
+
+const store = createStore(reducer, applyMiddleware(middlewareExample));
 
 ReactDOM.render(
   <React.StrictMode>
