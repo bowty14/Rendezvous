@@ -6,7 +6,7 @@ function Banner() {
     top: '0',
     left: '0',
     width: '100vw',
-    height: '30vw',
+    height: '25vw',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -15,7 +15,7 @@ function Banner() {
   }
 
   return (<div className='header' style={headerStyles}>
-    <h1>Here is your rendezvous</h1>
+    <h1>Rendezvous in PDX</h1>
   </div>
   );
 }

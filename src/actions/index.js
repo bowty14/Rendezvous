@@ -35,3 +35,19 @@ export const makeApiCall = () => {
       });
   }
 }
+
+export const makeApiCall2 = () => {
+  return dispatch => {
+    dispatch(requestRestaurants);
+    return fetch(`https://serene-earth-10579.herokuapp.com/restaurants`)
+      .then(response => response.json())
+      .then(
+        (jsonifiedResponse) => {
+          console.log(jsonifiedResponse)
+          dispatch(getRestaurantSuccess(jsonifiedResponse));
+        })
+      .catch((error) => {
+        dispatch(getRestaurantFailure(error));
+      });
+  }
+}

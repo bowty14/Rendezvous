@@ -1,19 +1,31 @@
 import React from 'react';
 import '../App.css';
-import RestaurantList from './RestaurantList';
-import Header from './Banner';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import RandomRestaurant from './RandomRestaurant';
+import Banner from './Banner';
+import Footer from './Footer';
+// import RestaurantList from './RestaurantList';
+
 function App() {
   const appStyles = {
     fontFamily: "'Montserrat', sans-serif"
     
   }
   return (
-    <React.Fragment>
+    <Router>
       <div style={appStyles}>
-        <Header />
-        <div className='random'><RestaurantList /></div>
+        <Banner />
+        <Switch>
+        <Route path='/'>
+        <div className='random'><RandomRestaurant /></div>
+          </Route>
+          {/* <Route path='/'>
+            <RestaurantList/>
+          </Route> */}
+        </Switch>
+        <Footer/>
       </div>
-    </React.Fragment>
+    </Router>
   )
 }
 
