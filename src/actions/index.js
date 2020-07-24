@@ -17,7 +17,7 @@ export const getRestaurantFailure = (error) => ({
 
 
 const randomGenerator = () => {
-  return Math.random() * (20 - 1) + 1;
+  return Math.random() * (18 - 1) + 1;
 }
 
 export const makeApiCall = () => {
