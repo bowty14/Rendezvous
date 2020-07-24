@@ -6,7 +6,7 @@ function Banner() {
     top: '0',
     left: '0',
     width: '100vw',
-    height: '30vw',
+    height: '25vw',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',

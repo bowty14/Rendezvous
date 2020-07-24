@@ -3,7 +3,7 @@ import { makeApiCall } from '../actions';
 import { connect } from 'react-redux';
 
 
-class RestaurantList extends React.Component {
+class RandomRestaurant extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -33,9 +33,9 @@ class RestaurantList extends React.Component {
               <h3 className='restNum'>{restaurants.number}</h3>
               <h3 className='restCat'>Category: {restaurants.category}</h3>
               <h3 className='restPrice'>Price per person: {restaurants.price}</h3>
-              <button className='menubtn'><a className='restMenu' href={restaurants.menu}>Menu</a></button><br />
-              <button className='resbtn'><a className='restResv' href={restaurants.reservation}>Make a reservation</a></button><br />
-              <button className='webBtn'><a className='restWeb' href={restaurants.website}>Checkout their website</a></button>
+              <button className='menubtn'><a className='restMenu' href={restaurants.menu} target="_blank">Menu</a></button><br />
+              <button className='resbtn'><a className='restResv' href={restaurants.reservation} target="_blank">Make a reservation</a></button><br />
+              <button className='webBtn'><a className='restWeb' href={restaurants.website} target="_blank">Checkout their website</a></button>
             </div>
             <br/><br/>
           </div>
@@ -52,7 +52,7 @@ const mapStateToProps = state => {
     error: state.error
   }
 }
-export default connect(mapStateToProps)(RestaurantList);
+export default connect(mapStateToProps)(RandomRestaurant);
 
 
 

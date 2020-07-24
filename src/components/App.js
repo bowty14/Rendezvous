@@ -1,7 +1,9 @@
 import React from 'react';
 import '../App.css';
-import RestaurantList from './RestaurantList';
-import Header from './Banner';
+import RandomRestaurant from './RandomRestaurant';
+import Banner from './Banner';
+import Footer from './Footer';
+
 function App() {
   const appStyles = {
     fontFamily: "'Montserrat', sans-serif"
@@ -10,8 +12,9 @@ function App() {
   return (
     <React.Fragment>
       <div style={appStyles}>
-        <Header />
-        <div className='random'><RestaurantList /></div>
+        <Banner />
+        <div className='random'><RandomRestaurant /></div>
+        <Footer/>
       </div>
     </React.Fragment>
   )
