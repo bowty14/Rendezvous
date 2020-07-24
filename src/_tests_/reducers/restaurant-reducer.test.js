@@ -9,6 +9,7 @@ describe('restaurantReducer', () => {
     restaurants: [],
     error: null
   };
+
   test('should successfully return the default state if no action is passed into it', () => {
     expect(restaurantReducer(defaultState, { type: null })).toEqual(
       {
@@ -18,6 +19,7 @@ describe('restaurantReducer', () => {
       }
     );
   });
+
   test('requesting restaurants should successfully change isLoading from false to true', () => {
     action = {
       type: c.REQUEST_RESTAURANT
@@ -25,6 +27,20 @@ describe('restaurantReducer', () => {
     expect(restaurantReducer(defaultState, action)).toEqual({
       isLoading: true,
       restaurants: [],
+      error: null
+    });
+  });
+
+  test('Successfully gettting restaurants should change isLoading to false and update restaurants', () => {
+    const restaurants = 'A restaurant';
+    action = {
+      type: c.GET_RESTAURANT_SUCCESS,
+      restaurants
+    };
+
+    expect(restaurantReducer(loadingState, action)).toEqual({
+      isLoading: false,
+      restaurants: 'A restaurant',
       error: null
     });
   });
