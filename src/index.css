@@ -19,6 +19,9 @@ code {
   background-repeat: no-repeat;
   font-size: 3rem;
 }
+.footer {
+  margin-top: 2%;
+}
 .header h1 {
 
   font-size: 5rem;
@@ -170,4 +173,7 @@ code {
   color: #fff;
   background-color: #03355e;
   border-color: #204d74;
+}
+.card2{
+  margin-bottom: 10%;
 }

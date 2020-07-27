@@ -7,14 +7,18 @@ import middlewareLogger from './middleware/middleware-logger';
 import reducer from './reducers/restaurant-reducer';
 import App from './components/App';
 import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom'
 import * as serviceWorker from './serviceWorker';
+
 
 const store = createStore(reducer, applyMiddleware(thunkMiddleware, middlewareLogger));
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+  <BrowserRouter>
+    <Provider store={store}>
+      <App />
+   </Provider>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

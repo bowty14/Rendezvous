@@ -1,10 +1,11 @@
 import React from 'react';
 import '../App.css';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import RandomRestaurant from './RandomRestaurant';
+// import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+// import RandomRestaurant from './RandomRestaurant';
 import Banner from './Banner';
 import Footer from './Footer';
 // import RestaurantList from './RestaurantList';
+import RestaurantControl from './RestaurantControl'
 
 function App() {
   const appStyles = {
@@ -12,20 +13,13 @@ function App() {
     
   }
   return (
-    <Router>
+    <React.Fragment>
       <div style={appStyles}>
         <Banner />
-        <Switch>
-        <Route path='/'>
-        <div className='random'><RandomRestaurant /></div>
-          </Route>
-          {/* <Route path='/'>
-            <RestaurantList/>
-          </Route> */}
-        </Switch>
-        <Footer/>
+        <RestaurantControl />
+        <div className='footer'><Footer /></div>
       </div>
-    </Router>
+    </React.Fragment>
   )
 }
 
