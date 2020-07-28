@@ -19,6 +19,9 @@ code {
   background-repeat: no-repeat;
   font-size: 3rem;
 }
+.footer {
+  margin-top: 2%;
+}
 .header h1 {
 
   font-size: 5rem;
@@ -170,4 +173,36 @@ code {
   color: #fff;
   background-color: #03355e;
   border-color: #204d74;
+}
+.card2{
+  margin-bottom: 10%;
+}
+.list {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border: 2px solid;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left:14%;
+  display: inline-block;
+  height: 55px;
+  width: 400px;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+.rando {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  border: 2px solid;
+  position: absolute;
+  top: 0;
+  left: 1%;
+   height: 55px;
+  overflow: hidden;
+  background-color: #e5e5e5;
+  
+  display: inline-block;
 }

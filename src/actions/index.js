@@ -14,6 +14,20 @@ export const getRestaurantFailure = (error) => ({
   error
 });
 
+// export const requestRestaurants2 = () => ({
+//   type: c.REQUEST_RESTAURANT
+// });
+
+// export const getRestaurantSuccess2 = (restaurants) => ({
+//   type: c.GET_RESTAURANT_SUCCESS,
+//   restaurants
+// });
+
+// export const getRestaurantFailure2 = (error) => ({
+//   type: c.GET_RESTAURANT_FAILURE,
+//   error
+// });
+
 
 
 const randomGenerator = () => {
@@ -36,18 +50,18 @@ export const makeApiCall = () => {
   }
 }
 
-export const makeApiCall2 = () => {
-  return dispatch => {
-    dispatch(requestRestaurants);
-    return fetch(`https://serene-earth-10579.herokuapp.com/restaurants`)
-      .then(response => response.json())
-      .then(
-        (jsonifiedResponse) => {
-          console.log(jsonifiedResponse)
-          dispatch(getRestaurantSuccess(jsonifiedResponse));
-        })
-      .catch((error) => {
-        dispatch(getRestaurantFailure(error));
-      });
-  }
-}
+// export const makeApiCall2 = () => {
+//   return async (dispatch) => {
+//     dispatch(requestRestaurants2);
+//     return await fetch(`https://serene-earth-10579.herokuapp.com/restaurants/`)
+//       .then(response => response.json())
+//       .then(
+//         (jsonifiedResponse) => {
+//           console.log(jsonifiedResponse)
+//           dispatch(getRestaurantSuccess2(jsonifiedResponse));
+//         })
+//       .catch((error) => {
+//         dispatch(getRestaurantFailure2(error));
+//       });
+//   }
+// }

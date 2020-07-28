@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 function Banner() {
   const headerStyles = {
@@ -15,6 +16,14 @@ function Banner() {
   }
 
   return (<div className='header' style={headerStyles}>
+    <ul>
+      <h4>
+        <Link to="/restaurant" className='list'>All Restaurants</Link>
+      </h4>
+      <h4>
+        <Link to="/" className='rando'>Random</Link>
+      </h4>
+    </ul>
     <h1>Rendezvous in PDX</h1>
   </div>
   );
