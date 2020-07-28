@@ -6,7 +6,7 @@ import RestaurantList from './RestaurantList';
 const RestaurantRoutes = () => {
   return (
     <Switch>
-      <Route exact path='/' component={RandomRestaurant}></Route>
+      <Route exact path='/random' component={RandomRestaurant}></Route>
       <Route path='/restaurant' component={RestaurantList}></Route>
     </Switch>
   );

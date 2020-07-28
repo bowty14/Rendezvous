@@ -18,7 +18,7 @@ function RestaurantList() {
       .catch(error => console.log(error));
   },{})
 console.log(apiCall)
-  return (
+  return (<div className='restaurantList'>
     <React.Fragment>
 
       <div>
@@ -44,6 +44,8 @@ console.log(apiCall)
       </ul>  
       </div>
     </React.Fragment>
+      </div>
+    
   );
 }
 

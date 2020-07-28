@@ -78,7 +78,7 @@ function RandomRestaurant() {
   function refreshPage() {
     window.location.reload(false);
   }
-  return (
+  return (<body className='randomRestaurant'>
     <React.Fragment>
 
       <div>
@@ -93,10 +93,50 @@ function RandomRestaurant() {
           <button className='menubtn'><a className='restMenu' href={apiCall.menu} target={apiCall.menu} >Menu</a></button><br />
           <button className='resbtn'><a className='restResv' href={apiCall.reservation} target={apiCall.reservation}>Make a reservation</a></button><br />
           <button className='webBtn'><a className='restWeb' href={apiCall.website} target={apiCall.website}>Checkout their website</a></button>
-              </div>
+        </div>
+        <ul>
+          <h6 className='filler'>
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+            sdal;fjl;asdkhg;lhas;ldkghlasdkghl;askdghlasdhg
+          </h6>
+        </ul>
             
       </div>
     </React.Fragment>
+  </body>
   );
 }
 
