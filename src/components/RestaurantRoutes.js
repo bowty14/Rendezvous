@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import RandomRestaurant from './RandomRestaurant';
 import RestaurantList from './RestaurantList';
 
-const RestaurantControl = () => {
+const RestaurantRoutes = () => {
   return (
     <Switch>
       <Route exact path='/' component={RandomRestaurant}></Route>
@@ -12,4 +12,4 @@ const RestaurantControl = () => {
   );
 }
 
-export default RestaurantControl;
+export default RestaurantRoutes;

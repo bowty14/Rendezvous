@@ -17,12 +17,12 @@ function Banner() {
 
   return (<div className='header' style={headerStyles}>
     <ul>
-      <li>
-        <Link to="/restaurant">Restaurant list</Link>
-      </li>
-      <li>
-        <Link to="/">Random</Link>
-      </li>
+      <h4>
+        <Link to="/restaurant" className='list'>All Restaurants</Link>
+      </h4>
+      <h4>
+        <Link to="/" className='rando'>Random</Link>
+      </h4>
     </ul>
     <h1>Rendezvous in PDX</h1>
   </div>

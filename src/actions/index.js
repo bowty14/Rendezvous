@@ -53,7 +53,7 @@ export const makeApiCall = () => {
 // export const makeApiCall2 = () => {
 //   return async (dispatch) => {
 //     dispatch(requestRestaurants2);
-//     return await fetch(`https://serene-earth-10579.herokuapp.com/restaurants`)
+//     return await fetch(`https://serene-earth-10579.herokuapp.com/restaurants/`)
 //       .then(response => response.json())
 //       .then(
 //         (jsonifiedResponse) => {

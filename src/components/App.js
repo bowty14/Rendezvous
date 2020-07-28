@@ -1,11 +1,8 @@
 import React from 'react';
 import '../App.css';
-// import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-// import RandomRestaurant from './RandomRestaurant';
 import Banner from './Banner';
 import Footer from './Footer';
-// import RestaurantList from './RestaurantList';
-import RestaurantControl from './RestaurantControl'
+import RestaurantRoutes from './RestaurantRoutes'
 
 function App() {
   const appStyles = {
@@ -16,8 +13,8 @@ function App() {
     <React.Fragment>
       <div style={appStyles}>
         <Banner />
-        <RestaurantControl />
-        <div className='footer'><Footer /></div>
+        <RestaurantRoutes />
+        <Footer/>
       </div>
     </React.Fragment>
   )
