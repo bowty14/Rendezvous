@@ -7,7 +7,7 @@ function Banner() {
     top: '0',
     left: '0',
     width: '100vw',
-    height: '25vw',
+    height: '24vw',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -16,15 +16,13 @@ function Banner() {
   }
 
   return (<div className='header' style={headerStyles}>
-    <ul>
-      <h4>
-        <Link to="/restaurant" className='list'>All Restaurants</Link>
-      </h4>
-      <h4>
-        <Link to="/" className='rando'>Random</Link>
-      </h4>
-    </ul>
-    <h1>Rendezvous in PDX</h1>
+      <ul className='bannerHead'>
+          <h5 className='bannerLink'><Link to="/restaurant" className='Link1'>Restaurants</Link></h5>
+          <h5 className='bannerLink'><Link to="/random" className='Link2'>Random</Link></h5>
+          <h5 className='bannerLink'><Link to ="/about" className='Link4'>About</Link></h5>
+          <h5 className='bannerLink'><Link to ="/" className='Link3'>Home</Link></h5>
+      </ul>
+    <h2 className='headerTitle'>Rendezvous in PDX</h2>
   </div>
   );
 }
