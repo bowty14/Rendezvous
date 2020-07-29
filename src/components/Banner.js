@@ -19,10 +19,9 @@ function Banner() {
       <ul className='bannerHead'>
           <h5 className='bannerLink'><Link to="/restaurant" className='Link1'>Restaurants</Link></h5>
           <h5 className='bannerLink'><Link to="/random" className='Link2'>Random</Link></h5>
-          <h5 className='bannerLink'><Link to ="/about" className='Link4'>About</Link></h5>
           <h5 className='bannerLink'><Link to ="/" className='Link3'>Home</Link></h5>
       </ul>
-    <h2 className='headerTitle'>Rendezvous in PDX</h2>
+    <h2 className='headerTitle'></h2>
   </div>
   );
 }

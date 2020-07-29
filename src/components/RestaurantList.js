@@ -7,7 +7,7 @@ function RestaurantList() {
   const [apiCall, setApiCall] = useState([])
   const [isLoading, setIsLoading] = useState(true)
   useEffect(() => {
-    fetch('https://serene-earth-10579.herokuapp.com/restaurants', {
+    fetch('https://salty-fjord-35244.herokuapp.com/restaurants', {
       method: 'GET'
     })
       .then(res => res.json())
