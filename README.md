@@ -70,7 +70,7 @@ I will be building out two projects, a custom Rails API for all the restaurants 
 
 
 ## Support and contact details
-_Have a bug or an issue with this application? [Open a new issue](https://github.com/bowty14/DateNightApi/issues) here on GitHub.com_
+_Have a bug or an issue with this application? [Open a new issue](https://github.com/bowty14/Rendezvous/issues) here on GitHub.com_
 
 ## Technologies Used
 * >_Reactjs_
@@ -79,7 +79,7 @@ _Have a bug or an issue with this application? [Open a new issue](https://github
 * >_Git_
 * >_GitHub_
 * >_Api's_
-* >_This project uses a custom built API that can be accessed at this address `https://serene-earth-10579.herokuapp.com/`_
+* >_This project uses a custom built API that can be accessed at this address `https://salty-fjord-35244.herokuapp.com/restaurants`_
 ### License
 
 *This software is licensed under the MIT license* 
