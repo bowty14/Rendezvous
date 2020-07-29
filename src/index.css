@@ -257,11 +257,11 @@ code {
    margin-left: auto;
    margin-right: auto;
   background-color: black;
-  height: 100px;
+  height: 180px;
   width: 4000px;
 } 
 .bannerLink{
-  margin-top: 0;
+  font-size: 2rem;
   margin-left: -.6%;
   position: absolute;
   top: 0;
@@ -323,6 +323,14 @@ background-color: grey;
   margin-top: -5%;
   font-size: 3rem;
   -webkit-text-stroke: 2px #ffffff;
+}
+.bannerHead { 
+  height: 120px;
+  
+}
+.bannerLink{
+  font-size: 1rem;
+  
 }
 .Home {
   background-size: 1px;
