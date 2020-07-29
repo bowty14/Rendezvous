@@ -24,12 +24,27 @@ code {
   font-size: 3rem;
 }
 .Home{
-  background-image: url(assests/Rendezvous3.png);
+  background-image: url(assests/Rendezvous4.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
   border: 2px black solid;
+}
+.homeGreeting {
+  opacity: 0%;
+  font-size: 5rem;
+  -webkit-text-stroke: 2px #ffffff;
+}
+.homeGreeting2 {
+  opacity: 0%;
+  font-size: 1rem;
+  -webkit-text-stroke: 2px red;
+}
+.homeGreeting3 {
+  opacity: 0%;
+  font-size: 1rem;
+  -webkit-text-stroke: 2px yellow;
 }
 .landing{
   color: grey;
@@ -59,6 +74,7 @@ code {
 
   font-size: 5rem;
   -webkit-text-stroke: 2px #ffffff;
+  opacity: 0;
 }
 
 .random{
@@ -307,6 +323,19 @@ background-color: grey;
   margin-top: -5%;
   font-size: 3rem;
   -webkit-text-stroke: 2px #ffffff;
+}
+.Home {
+  background-size: 1px;
+  background-color: black;
+}
+.homeGreeting {
+  opacity: 100%;
+}
+.homeGreeting2 {
+  opacity: 100%;
+}
+.homeGreeting3 {
+  opacity: 100%;
 }
 .card {
   margin-bottom: 12%;

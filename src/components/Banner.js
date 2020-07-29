@@ -21,7 +21,7 @@ function Banner() {
           <h5 className='bannerLink'><Link to="/random" className='Link2'>Random</Link></h5>
           <h5 className='bannerLink'><Link to ="/" className='Link3'>Home</Link></h5>
       </ul>
-    <h2 className='headerTitle'></h2>
+    <h2 className='headerTitle'>Rendenzvous</h2>
   </div>
   );
 }

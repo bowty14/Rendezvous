@@ -31,13 +31,13 @@ export const getRestaurantFailure = (error) => ({
 
 
 const randomGenerator = () => {
-  return Math.random() * (18 - 1) + 1;
+  return Math.random() * (21 - 1) + 1;
 }
 
 export const makeApiCall = () => {
   return dispatch => {
     dispatch(requestRestaurants);
-    return fetch(`https://serene-earth-10579.herokuapp.com/restaurants/${randomGenerator()}`)
+    return fetch(`https://salty-fjord-35244.herokuapp.com/restaurants/random`)
       .then(response => response.json())
       .then(
         (jsonifiedResponse) => {
@@ -50,18 +50,3 @@ export const makeApiCall = () => {
   }
 }
 
-// export const makeApiCall2 = () => {
-//   return async (dispatch) => {
-//     dispatch(requestRestaurants2);
-//     return await fetch(`https://serene-earth-10579.herokuapp.com/restaurants/`)
-//       .then(response => response.json())
-//       .then(
-//         (jsonifiedResponse) => {
-//           console.log(jsonifiedResponse)
-//           dispatch(getRestaurantSuccess2(jsonifiedResponse));
-//         })
-//       .catch((error) => {
-//         dispatch(getRestaurantFailure2(error));
-//       });
-//   }
-// }
