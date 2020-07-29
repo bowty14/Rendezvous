@@ -1,68 +1,87 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project created on 7/24/20
 
-## Available Scripts
+## Capstone Project
 
-In the project directory, you can run:
+# Rendezvous in PDX
 
-### `npm start`
+#### By **Tyler Bowerman**
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Description
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+This application is a tool to help couples in PDX deal with datenigt quandries.
 
-### `npm test`
+## Specifications
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+|   Behavior Description|        Output Ex.      |
+|------------------------|-----------------------|
+|1.click/push 'New restaurant' button. | returns a random restaurant.|
+|2. click/push 'Restaurants' tab on nav bar.|Returns a list of all restaurants in Database.|
+|4. click/push 'Menu' button on restaurant details.| Opens a new tab for the restaurants menu.|
+|5. click/push 'Reservation' button on restaurant details.| Opens a new tab for the restaurants Open Table page where users can make a reservation.|
+|6. click/push 'Website' button on restaurant details| Opens a new tab for the restaurants homepage.|
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Setup/Installation Requirements
+1* _Clone repository from Github: https://github.com/bowty14/Rendezvous.git_
+* _In the Terminal type : `$ git clone` [https://github.com/bowty14/Rendezvous.git]_
+* _Navigate to folder by typing  `$ cd Rendezvous` in terminal._
+* _Open the file up in the code editior of choice_
+* _You will need to install all dependencies. Do this by running `npm run install`_
 
-### `npm run eject`
+* _To view project in browser type in terminal, `npm run start`._
+* _Navigate to localhost:3000_
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Known Bugs
+No known bugs at this time in production. However in testing I am unable to get a integration test for creating a review to pass.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Capstone proposal 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Name of Student: Tyler Bowerman
 
-## Learn More
+Name of Project: Rendezvous in PDX
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Project's Purpose or Goal: (What will it do for users?) help to make date nights easier for couples in PDX. App will output a random restaurant when button clicked. Will be able to view all restaurants in the database
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+List the absolute minimum features the project requires to meet this purpose or goal:
 
-### Code Splitting
+Have a landing page that has a button to produce a random restaurant 
+second page that will list out all restaurants in database
+What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Custom built Rails api for restaurant database.
+Ruby on Rails, decided to do Reactjs front-end instead of Ruby.
+If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
 
-### Analyzing the Bundle Size
+Incorcoporate the use of React.js
+Add google maps for each restaurant listing
+Add links for a reservation to each listing
+Search function to find restaurants in database by category, price, and name
+What additional tools, frameworks, libraries, APIs, or other resources will these additional features require?
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Google maps API
+Add links to database for reservations 
+Is there anything else you'd like your instructor to know? 
 
-### Making a Progressive Web App
+I will be building out two projects, a custom Rails API for all the restaurants to be used in another app that will display the restaurants and hopefully google maps.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## Support and contact details
+_Have a bug or an issue with this application? [Open a new issue](https://github.com/bowty14/DateNightApi/issues) here on GitHub.com_
 
-### Deployment
+## Technologies Used
+* >_Reactjs_
+* >_JavaScript(ES6)_
+* >_CSS_
+* >_Git_
+* >_GitHub_
+* >_Api's_
+* >_This project uses a custom built API that can be accessed at this address `https://serene-earth-10579.herokuapp.com/`_
+### License
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+*This software is licensed under the MIT license* 
 
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Copyright (c) 2020 **Tyler Bowerman**
