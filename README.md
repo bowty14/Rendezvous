@@ -32,9 +32,9 @@ This application is a tool to help couples in PDX deal with datenigt quandries.
 
 * _To view project in browser type in terminal, `npm run start`._
 * _Navigate to localhost:3000_
-
+[View the hosted site](https://rendezvouspdx.netlify.app/) as mentioned below in known bugs this app will not work on a mobile view. Please view on a desktop and do not reload the random or restaurant pages, it will crash.
 ## Known Bugs
-No known bugs at this time in production. However in testing I am unable to get a integration test for creating a review to pass.
+Hosted site will not work on mobile for some unknown reason since it works fine locally. Viewing the hosted site on a desktop the app works great as long as you don't hit refresh on the /random or restaurantList tabs.
 
 
 ## Capstone proposal 
