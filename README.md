@@ -20,7 +20,8 @@ This application is a tool to help couples in PDX deal with datenigt quandries.
 |5. click/push 'Reservation' button on restaurant details.| Opens a new tab for the restaurants Open Table page where users can make a reservation.|
 |6. click/push 'Website' button on restaurant details| Opens a new tab for the restaurants homepage.|
 
-
+## Componet Diagram
+![Page Layout](public/RendezvousPDX.png)
 
 
 ## Setup/Installation Requirements
